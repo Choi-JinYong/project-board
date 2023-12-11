@@ -28,6 +28,10 @@ dependencies {
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    //DB연결 추가 (jpa , h2 , mysql)
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'com.h2database:h2'
+    runtimeOnly 'com.mysql:mysql-connector-j'
 }
 
 tasks.named('bootBuildImage') {
